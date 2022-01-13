@@ -1,0 +1,23 @@
+﻿h1 {
+    font-family: Montserrat;
+}
+
+h3 {
+    font-family: Montserrat;
+    color: darkcyan;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+container {
+    display:inline-block;
+    position: center;
+}
+
