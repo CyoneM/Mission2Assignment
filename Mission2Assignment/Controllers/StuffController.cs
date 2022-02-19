@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission2Assignment.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,19 @@ namespace Mission2Assignment.Controllers
     {
         public IActionResult Index()
         {
-            throw new IndexOutOfRangeException();
-            // return View();
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult GradeCalculator ()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GradeCalculator (GradeCalculatorModel model)
+        {
+            return View();
         }
     }
 }

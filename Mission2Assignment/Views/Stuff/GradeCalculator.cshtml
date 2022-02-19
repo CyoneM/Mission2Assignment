@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Grade Calculator"
+}
+
+@model GradeCalculatorModel;
+
+<div class="container">
+
+    <h3>Grade Calculator</h3>
+    <p style="font-style:italic">Only write a number up to two decimal places.</p>
+    <p style="font-style:italic">i.e. If you anticipate getting 94.15% on all assignments, enter "94.15".</p>
+
+    <form method="post">
+        <label>Assignments: </label>
+        <input id="assignments" asp-for="Assignment" />%<br />
+        <label>Group Project: </label>
+        <input id="groupproject" asp-for="GroupProject" />%<br />
+        <label>Quizzes: </label>
+        <input id="quizzes" asp-for="Quiz" />%<br />
+        <label>Exams: </label>
+        <input id="exams" asp-for="Exam" />%<br />
+        <label>INTEX: </label>
+        <input id="intex" asp-for="Intex" />%<br />
+        <input id="btnSend" type="submit" value="Calculate Final Grade" />
+
+        <div asp-validation-summary="All"></div>
+    </form>
+
+</div>
+
+
+
+<script src="js/gradeCalculator.js"></script>
